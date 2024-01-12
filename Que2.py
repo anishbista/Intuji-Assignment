@@ -10,4 +10,8 @@ for i in range(0, len(nums)):
         if nums[i] + nums[j] == target:
             pair.append((nums[i], nums[j]))
 
-print(f"Pair that sums of target: {pair}")
+
+if pair:
+    print(f"Pair that sums of target: {pair}")
+else:
+    print("Pair not found")
